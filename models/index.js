@@ -1,0 +1,7 @@
+const User = require('./User');
+
+// AS WE CREATE MORE MODELS WE'LL NEED TO REQUIRE THEM HERE** DB
+
+//AS WE DEVELOP MORE MODELS WE'LL NEED TO CREATE ASSOCIATIONS** DB
+
+module.exports = { User };
