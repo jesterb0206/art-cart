@@ -1,7 +1,18 @@
 const User = require('./User');
+const Post = require('./Post');
 
 // AS WE CREATE MORE MODELS WE'LL NEED TO REQUIRE THEM HERE** DB
 
-//AS WE DEVELOP MORE MODELS WE'LL NEED TO CREATE ASSOCIATIONS** DB
+User.hasMany(Post, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
+});
 
-module.exports = { User };
+Post.belongsTo(User, {
+foreignKey: "user_id"
+});
+
+
+// AS WE DEVELOP MORE MODELS WE'LL NEED TO CREATE ASSOCIATIONS** DB
+
+module.exports = { User, Post };
