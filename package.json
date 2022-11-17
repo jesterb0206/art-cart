@@ -1,0 +1,44 @@
+{
+  "name": "project-two",
+  "version": "1.0.0",
+  "description": "A full-stack application, which combines a robust back end—with servers, databases, advanced APIs, and user authentication—to an intuitive front end.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesterb0206/project-two.git"
+  },
+  "keywords": [
+    "Express",
+    "Handlebars",
+    "Heroku",
+    "MVC",
+    "MySQL",
+    "Node",
+    "Sequelize"
+  ],
+  "author": "Alex Lee, Bradley Jester, Dorian Birch & Timothy Barnaby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jesterb0206/project-two/issues"
+  },
+  "homepage": "https://github.com/jesterb0206/project-two#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^7.1.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
