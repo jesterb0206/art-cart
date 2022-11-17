@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS artCart_db;
+
+CREATE DATABASE artCart_db;
