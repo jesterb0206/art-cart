@@ -36,7 +36,8 @@
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.25.6"
+    "sequelize": "^6.25.6",
+    "stripe": "^11.1.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
