@@ -6,6 +6,8 @@ A full-stack application, which combines a robust back end—with servers, datab
 
 Sources:
 
+[How To Make Ecommerce Website Using HTML And CSS Step By Step | Create e-Commerce Website - Easy Tutorials](https://www.youtube.com/watch?v=yQimoqo0-7g)
+
 [‘undohtml.css’ – Tantek Celik](https://cssdeck.com/blog/scripts/undohtml-css-tantek-celik/) Tantek's CSS reset
 
 [![License: CC BY 2.0](https://img.shields.io/badge/License-CC_BY_2.0-lightgrey.svg)](https://creativecommons.org/licenses/by/2.0/)
