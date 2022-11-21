@@ -1,0 +1,108 @@
+/*made the background gradient to mimic ocean colors
+Also i'm leaving extra lines at the moment ot i can read my code easier*/
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: rgb(28, 162, 229);
+    color: rgb(17, 66, 109);
+    background-image: linear-gradient(rgb(49, 160, 200), white, turquoise, blue)
+  }
+  
+  /*Centered text and made bigger*/
+  h1 {
+    text-align: center;
+    font-size: 100px;
+    text-shadow: navy;
+    text-shadow: 30px;
+  }
+  
+  nav {
+    background-color: blue;
+    border: 15px solid rgb(247, 244, 244);
+    text-align: center;
+  
+  }
+  
+  p {
+    font-size: 30px;
+  }
+  
+  .container {
+    display: block;
+    background-color: rgb(64, 203, 190);
+    padding: 10px;
+  }
+  
+  /*Changed boxes to buttons on nav bar, was easier and i liked the effect better*/
+  button {
+    background-color: gray;
+    color: white;
+    width: 275px;
+    height: 100px;
+    margin: 20px 40px;
+    box-shadow: 30px, 30px, 30px;
+  }
+  
+  /*  */
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+  }
+  
+  @media screen and (max-width: 992px) {
+  
+    button {
+      width: 20%;
+      margin: 20px 20px;
+    }
+  
+  }
+  
+  /* Looked at this on my phone and really loved the effect and sizing of everything*/
+  @media screen and (max-width: 768px) {
+    button {
+      width: 50%;
+  
+    }
+  
+  
+  }
+  
+  main {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    margin-top: 2%;
+  }
+  
+  .main-header {
+    display: flex;
+    /* Forces elements to the next line if they don't fit */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  /*Going ot tweak this more in the future*/
+  footer {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    text-shadow: rgb(246, 246, 248);
+    text-shadow: 30px;
+  }
