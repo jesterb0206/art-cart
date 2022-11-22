@@ -20,13 +20,8 @@ router.post('/', async (req, res) => {
       post_id: req.body.post_id,
     });
 
-    req.session.save(() => {
-      // req.session.user_id = userData.id;
-      // req.session.logged_in = true;
-
-      res
-        .status(200)
-        .json({ user: commentData, message: 'You are now logged in!' });
+    req.save(() => {
+      res.status(200).json({ user: commentData, message: 'comment made!' });
     });
   } catch (err) {
     console.log(err);
