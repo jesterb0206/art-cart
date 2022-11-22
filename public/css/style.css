@@ -1,3 +1,5 @@
+/* Global Styling */
+
 * {
   margin: 0;
   padding: 0;
@@ -136,7 +138,7 @@ form .btn:focus {
   left: 0;
 }
 
-/* Navigation Bar */
+/* Navigation Bar Styling */
 
 .navbar {
   display: flex;
@@ -165,7 +167,7 @@ nav ul li {
   margin-left: 20px;
 }
 
-/* Footer */
+/* Footer Styling */
 
 .footer {
   background: #ffffff;
@@ -223,9 +225,87 @@ nav ul li {
   text-align: center;
 }
 
-/* Media Query 800 */
+/* Cart Page Styling */
+
+.cart-page {
+  margin: 80px auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #ff523b;
+  font-weight: normal;
+}
+
+td {
+  padding: 10px 5px;
+}
+
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+
+td a {
+  color: #ff523b;
+  font-size: 12px;
+}
+
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price table {
+  border-top: 3px solid #ff523b;
+  width: 100%;
+  max-width: 350px;
+}
+
+td:last-child {
+  text-align: right;
+}
+
+th:last-child {
+  text-align: right;
+}
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  /* May Change Later */
+  padding-top: 90px;
+}
+
+/* Media Query 800px & Under */
 
 @media only screen and (max-width: 800px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
   nav ul {
     position: absolute;
     top: 70px;
@@ -247,18 +327,13 @@ nav ul li {
   nav ul li a {
     color: #fff;
   }
-
-  .menu-icon {
-    display: block;
-    cursor: pointer;
-  }
 }
 
-/* Media Query 600 */
+/* Media Query 600px & Under */
 
 @media only screen and (max-width: 600px) {
-  .row {
-    text-align: center;
+  .cart-info p {
+    display: none;
   }
 
   .col-1,
@@ -266,5 +341,9 @@ nav ul li {
   .col-3,
   .col-4 {
     flex-basis: 100%;
+  }
+
+  .row {
+    text-align: center;
   }
 }
