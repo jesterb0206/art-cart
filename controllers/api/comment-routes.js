@@ -22,6 +22,15 @@ router.post('/', async (req, res) => {
 
     req.save(() => {
       res.status(200).json({ user: commentData, message: 'comment made!' });
+
+    req.session.save(() => {
+      // req.session.user_id = userData.id;
+      // req.session.logged_in = true;
+
+      res
+        .status(200)
+        .json({ user: commentData, message: 'You are now logged in!' });
+
     });
   } catch (err) {
     console.log(err);
