@@ -12,17 +12,17 @@ router.get('/', async (req, res) => {
   }
 });
 
-/*router.post('/', async (req, res) => {
+router.post('/', async (req, res) => {
   try {
     const commentData = await Comment.create({
-      comment: req.body.id,
+      comment: req.body.comment,
       user_id: req.body.user_id,
       post_id: req.body.post_id,
     });
 
     req.session.save(() => {
-      req.session.user_id = userData.id;
-      req.session.logged_in = true;
+      // req.session.user_id = userData.id;
+      // req.session.logged_in = true;
 
       res
         .status(200)
@@ -32,6 +32,6 @@ router.get('/', async (req, res) => {
     console.log(err);
     res.status(500).json(err);
   }
-});*/
+});
 
 module.exports = router;
