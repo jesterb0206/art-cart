@@ -20,8 +20,8 @@ router.post('/', async (req, res) => {
       post_id: req.body.post_id,
     });
 
-    req.save(() => {
-      res.status(200).json({ user: commentData, message: 'comment made!' });
+    req.session.save(() => {
+      res.status(200).json({ user: commentData, message: 'comment added!' });
     });
   } catch (err) {
     console.log(err);
