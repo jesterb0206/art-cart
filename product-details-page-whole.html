@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ART (C)ART</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href=""><h2>ART (C)ART</h2></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="">Home</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="">Sign In</a></li>
+            <li><a href="">Account</a></li>
+          </ul>
+        </nav>
+        <a href=""><img src="images/cart.png" width="30px" height="30px" /></a>
+        <img src="images/menu.png" onclick="menutoggle()" class="menu-icon" />
+      </div>
+    </div>
+    <!-- Single Product View -->
+    <div class="small-container-2 single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/by-the-coast.jpg" width="100%" id="ProductImg" />
+        </div>
+        <div class="col-2">
+          <p class="relative-positioning">Home / Oil Painting</p>
+          <h1>By the Coast - Seascape Oil Painting by Darko Topalski</h1>
+          <h4>$217.00</h4>
+
+          <input type="number" value="1" />
+          <a href="cart-page-whole.html" class="btn">Add To Cart</a>
+
+          <h3>PRODUCT DETAILS <i class="fa fa-indent"></i></h3>
+          <br />
+          <p>
+            Medium: Oil on Canvas <br />
+            Size: 20" x 28" <br />
+            Year: 2018 <br />
+            Signed: Yes
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="small-container-2">
+      <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+      </div>
+    </div>
+    <!-- Related Products -->
+    <div class="small-container-3">
+      <div class="row">
+        <div class="col-4">
+          <img
+            width="216"
+            height="288"
+            src="images/irish-farmland-north-coast.jpg"
+          />
+          <h4>Irish Farmland</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$279.00</p>
+        </div>
+        <div class="col-4">
+          <img
+            width="216"
+            height="288"
+            src="images/up-from-tenants-harbor.jpg"
+          />
+          <h4>Tenants Harbor</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+          </div>
+          <p>$5,900.00</p>
+        </div>
+        <div class="col-4">
+          <img width="216" height="288" src="images/blue-day.jpg" />
+          <h4>Blue Day</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$310.00</p>
+        </div>
+        <div class="col-4">
+          <img width="216" height="288" src="images/beach-cafe.jpg" />
+          <h4>Beach Cafe</h4>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <p>$979.00</p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col1">
+            <h3>Download the ART C(ART) App</h3>
+            <div class="app-logo">
+              <img src="images/play-store.png" />
+              <img src="images/app-store.png" />
+            </div>
+          </div>
+          <div class="footer-col2">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+          <div class="footer-col3">
+            <h3>Follow Us</h3>
+            <ul>
+              <li>Instagram</li>
+              <li>Facebook</li>
+              <li>Pinterest</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">&#169 2022 - ART (C)ART, Inc.</p>
+      </div>
+    </div>
+    <!-- Toggle Menu -->
+    <script>
+      var MenuItems = document.getElementById('MenuItems');
+
+      MenuItems.style.maxHeight = '0px';
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == '0px') {
+          MenuItems.style.maxHeight = '200px';
+        } else {
+          MenuItems.style.maxHeight = '0px';
+        }
+      }
+    </script>
+  </body>
+</html>
