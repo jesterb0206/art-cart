@@ -33,32 +33,41 @@
         <img src="images/menu.png" onclick="menutoggle()" class="menu-icon" />
       </div>
     </div>
-    <!-- Products -->
+    <!-- Single Product View -->
+    <div class="small-container-2 single-product">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/by-the-coast.jpg" width="100%" id="ProductImg" />
+        </div>
+        <div class="col-2">
+          <p class="relative-positioning">Home / Oil Painting</p>
+          <h1>By the Coast - Seascape Oil Painting by Darko Topalski</h1>
+          <h4>$217.00</h4>
+
+          <input type="number" value="1" />
+          <a href="cart-page-whole.html" class="btn">Add To Cart</a>
+
+          <h3>PRODUCT DETAILS <i class="fa fa-indent"></i></h3>
+          <br />
+          <p>
+            Medium: Oil on Canvas <br />
+            Size: 20" x 28" <br />
+            Year: 2018 <br />
+            Signed: Yes
+          </p>
+        </div>
+      </div>
+    </div>
     <div class="small-container-2">
       <div class="row row-2">
-        <h2>All Products</h2>
-        <select>
-          <option>Default Sorting</option>
-          <option>Sort alphabetically</option>
-          <option>Sort by price</option>
-          <option>Sort by rating</option>
-        </select>
+        <h2>Related Products</h2>
+        <p>View More</p>
       </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="small-container-3">
       <div class="row">
-        <div class="col-4">
-          <a href="product-details.html"
-            ><img width="216" height="288" src="images/by-the-coast.jpg"
-          /></a>
-          <h4>By the Coast</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$217.00</p>
-        </div>
         <div class="col-4">
           <img
             width="216"
@@ -103,62 +112,6 @@
           </div>
           <p>$310.00</p>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <img width="216" height="288" src="images/cherry-blossoms.jpg" />
-          <h4>Cherry Blossoms</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$952.00</p>
-        </div>
-        <div class="col-4">
-          <img width="216" height="288" src="images/front-gate.jpg" />
-          <h4>Front Gate</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$333.00</p>
-        </div>
-        <div class="col-4">
-          <img
-            width="216"
-            height="288"
-            src="images/august-at-south-beach.jpg"
-          />
-          <h4>August at South Beach</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$145.00</p>
-        </div>
-        <div class="col-4">
-          <img width="216" height="288" src="images/winds-of-change.jpg" />
-          <h4>Winds of Change</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$565.00</p>
-        </div>
-      </div>
-      <div class="row">
         <div class="col-4">
           <img width="216" height="288" src="images/beach-cafe.jpg" />
           <h4>Beach Cafe</h4>
@@ -171,50 +124,6 @@
           </div>
           <p>$979.00</p>
         </div>
-        <div class="col-4">
-          <img width="216" height="288" src="images/arrondissement.jpg" />
-          <h4>Arrondissement</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$2,500.00</p>
-        </div>
-        <div class="col-4">
-          <img width="216" height="288" src="images/on-the-avenue.jpg" />
-          <h4>On the Avenue</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$1,125.00</p>
-        </div>
-        <div class="col-4">
-          <img width="216" height="288" src="images/excitement.jpg" />
-          <h4>Excitement</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$3,140.00</p>
-        </div>
-      </div>
-
-      <div class="page-btn">
-        <span>1</span>
-        <span>2</span>
-        <span>3</span>
-        <span>4</span>
-        <span>&#8594;</span>
       </div>
     </div>
     <!-- Footer -->
@@ -248,7 +157,7 @@
           </div>
         </div>
         <hr />
-        <p class="copyright">&#169 2022 - ART (C)ART, Inc.</p>
+        <p class="copyright"></p>
       </div>
     </div>
     <!-- Toggle Menu -->
