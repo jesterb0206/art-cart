@@ -28,7 +28,12 @@
           <ul id='MenuItems'>
             <li><a href=''>Home</a></li>
             <li><a href=''>Products</a></li>
-            <li><a href=''>Sign In</a></li>
+            {{#if loggedIn}}
+            <button id="logout">Logout</button>
+            {{else}}
+
+            <li><a href='/login-page'>Sign In</a></li>
+            {{/if}}
             <li><a href=''>Account</a></li>
           </ul>
         </nav>
