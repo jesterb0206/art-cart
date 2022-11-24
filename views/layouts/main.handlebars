@@ -3,7 +3,7 @@
     <meta charset='UTF-8' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <title>ART (C)ART</title>
-    <link rel='stylesheet' href='public/css/style.css' />
+    <link rel='stylesheet' href='/css/style.css' />
     <link
       href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap'
       rel='stylesheet'
@@ -29,10 +29,10 @@
             <li><a href=''>Home</a></li>
             <li><a href=''>Products</a></li>
             {{#if loggedIn}}
-            <button id="logout">Logout</button>
+              <button id='logout'>Logout</button>
             {{else}}
 
-            <li><a href='/login-page'>Sign In</a></li>
+              <li><a href='/login-page'>Sign In</a></li>
             {{/if}}
             <li><a href=''>Account</a></li>
           </ul>
