@@ -10,6 +10,7 @@ router.get('/', async (req, res) => {
     });
     const socialPost = socialData.map((post) => post.get({ plain: true }));
     res.render('home-page', {
+      layout: 'home-page-layout',
       socialPost,
       loggedIn: req.session.loggedIn,
     });
