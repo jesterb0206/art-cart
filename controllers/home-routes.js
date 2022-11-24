@@ -21,11 +21,9 @@ router.get('/', async (req, res) => {
 });
 
 // We could add a login page route here
-router.get('/login-page', async (req, res) => {
+router.get('/login', async (req, res) => {
   try {
-    res.render('login-page', {
-      loggedIn: req.session.loggedIn,
-    });
+    res.render('login-page');
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -36,12 +34,12 @@ router.get('/login-page', async (req, res) => {
 
 // Signup page view route
 
-router.get('/signup', (req, res) => {
+/*router.get('/signup', (req, res) => {
   if (req.session.logged_in) {
     res.redirect('/');
     return;
   }
-  res.render('signup');
-});
+  res.render('sign-up');
+});*/
 
 module.exports = router;
