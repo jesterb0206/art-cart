@@ -31,6 +31,33 @@ router.get('/login', async (req, res) => {
   }
 });
 
+router.get('/products', async (req, res) => {
+  try {
+    res.render('products-page');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.get('/product', async (req, res) => {
+  try {
+    res.render('product-details');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.get('/cart', async (req, res) => {
+  try {
+    res.render('cart-page');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 // We could also add a logout page route here
 
 // Signup page view route
