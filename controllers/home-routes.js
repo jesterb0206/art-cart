@@ -10,6 +10,7 @@ router.get('/', async (req, res) => {
     });
     const socialPost = socialData.map((post) => post.get({ plain: true }));
     res.render('home-page', {
+      layout: 'home-page-layout',
       socialPost,
       loggedIn: req.session.loggedIn,
     });
@@ -24,6 +25,33 @@ router.get('/', async (req, res) => {
 router.get('/login', async (req, res) => {
   try {
     res.render('login-page');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.get('/products', async (req, res) => {
+  try {
+    res.render('products-page');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.get('/product', async (req, res) => {
+  try {
+    res.render('product-details');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+router.get('/cart', async (req, res) => {
+  try {
+    res.render('cart-page');
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
