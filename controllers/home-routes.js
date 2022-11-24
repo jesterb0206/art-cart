@@ -7,13 +7,15 @@ router.get('/', async (req, res) => {
   try {
     const socialData = await Post.findAll({
       include: [
-        {
-          model: User,
-        },
+        User
       ],
     });
     const socialPost = socialData.map((post) => post.get({ plain: true }));
-    res.json(socialPost);
+    res.render('home-page', {
+      socialPost,
+      loggedIn: req.session.loggedIn,
+    });
+    console.log(socialPost)
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
