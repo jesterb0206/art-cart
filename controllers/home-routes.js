@@ -6,16 +6,14 @@ const withAuth = require('../utils/auth');
 router.get('/', async (req, res) => {
   try {
     const socialData = await Post.findAll({
-      include: [
-        User
-      ],
+      include: [User],
     });
     const socialPost = socialData.map((post) => post.get({ plain: true }));
     res.render('home-page', {
       socialPost,
       loggedIn: req.session.loggedIn,
     });
-    console.log(socialPost)
+    console.log(socialPost);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
@@ -23,6 +21,16 @@ router.get('/', async (req, res) => {
 });
 
 // We could add a login page route here
+router.get('/login-page', async (req, res) => {
+  try {
+    res.render('login-page', {
+      loggedIn: req.session.loggedIn,
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 
 // We could also add a logout page route here
 
