@@ -4,6 +4,14 @@ A full-stack application, which combines a robust back end—with servers, datab
 
 ## Credits
 
+Collaborators:
+
+[Alex Lee](https://github.com/ayesslee) <br>
+[Johnny Jin](https://github.com/fiamett) <br>
+[Bradley Jester](https://github.com/jesterb0206) <br>
+[Timothy Barnaby](https://github.com/tbarns) <br>
+[Dorian Birch](https://github.com/206Dorian)
+
 Sources:
 
 [How To Make Ecommerce Website Using HTML And CSS Step By Step | Create e-Commerce Website - Easy Tutorials](https://www.youtube.com/watch?v=yQimoqo0-7g)
