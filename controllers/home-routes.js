@@ -40,17 +40,9 @@ router.get('/products', async (req, res) => {
   }
 });
 
-//took this v part from mini project day 13
-router.get('/product/:id', async (req, res) => {
+router.get('/product', async (req, res) => {
   try {
-    const postData = await Post.findByPk(req.params.id, {
-//      include: [{ model: Location, through: Trip, as: 'planned_trips' }]
-    });
-    if (!postData) {
-      res.status(404).json({ message: 'Nothing found with this id!' });
-      return;
-    }
-    res.status(200).json(postData);
+    res.render('product-details');
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
