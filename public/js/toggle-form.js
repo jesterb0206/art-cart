@@ -1,5 +1,5 @@
-var LoginForm = document.getElementById('LoginForm');
-var RegForm = document.getElementById('RegForm');
+var LoginForm = document.getElementById('loginForm');
+var RegForm = document.getElementById('registerForm');
 var Indicator = document.getElementById('indicator');
 
 function register() {
