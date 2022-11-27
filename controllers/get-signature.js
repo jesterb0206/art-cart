@@ -19,6 +19,7 @@ function passwordProtected(req, res, next) {
   }
 }
 
+
 router.use(passwordProtected)
 
 router.get("/", (req, res) => {

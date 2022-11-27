@@ -21,6 +21,14 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
+router.get('/upload', async (req, res) => {
+  try {
+    res.render('edit-post');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 // We could add a login page route here
 router.get('/login', async (req, res) => {
   try {
