@@ -3,7 +3,7 @@ const { User, Comment, Post } = require('../models');
 const withAuth = require('../utils/auth');
 
 //GET all from homepage
-router.get('/', async (req, res) => {
+router.get('/', withAuth, async (req, res) => {
   try {
     const socialData = await Post.findAll({
       include: [User],
@@ -21,6 +21,14 @@ router.get('/', async (req, res) => {
   }
 });
 
+router.get('/upload', async (req, res) => {
+  try {
+    res.render('edit-post');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
 // We could add a login page route here
 router.get('/login', async (req, res) => {
   try {
