@@ -2,7 +2,8 @@ const router = require('express').Router();
 const { User, Comment, Post } = require('../models');
 const withAuth = require('../utils/auth');
 
-//GET all from homepage
+// Homepage Route //
+
 router.get('/', withAuth, async (req, res) => {
   try {
     const socialData = await Post.findAll({
@@ -21,23 +22,7 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-router.get('/upload', async (req, res) => {
-  try {
-    res.render('upload');
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
-// We could add a login page route here
-router.get('/login', async (req, res) => {
-  try {
-    res.render('login-page');
-  } catch (err) {
-    console.log(err);
-    res.status(500).json(err);
-  }
-});
+// Products Route //
 
 router.get('/products', async (req, res) => {
   try {
@@ -48,6 +33,8 @@ router.get('/products', async (req, res) => {
   }
 });
 
+// Retrieve A Single Product //
+
 router.get('/product', async (req, res) => {
   try {
     res.render('product-details');
@@ -57,25 +44,28 @@ router.get('/product', async (req, res) => {
   }
 });
 
-router.get('/cart', async (req, res) => {
+// Login Route //
+
+router.get('/login', async (req, res) => {
   try {
-    res.render('cart-page');
+    res.render('login-page');
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
 });
 
-// We could also add a logout page route here
+// Upload Route //
 
-// Signup page view route
-
-/*router.get('/signup', (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect('/');
-    return;
+router.get('/upload', async (req, res) => {
+  try {
+    res.render('upload');
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
   }
-  res.render('sign-up');
-});*/
+});
+
+// We'll Need An Account Route //
 
 module.exports = router;
