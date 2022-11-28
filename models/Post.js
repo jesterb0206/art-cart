@@ -36,7 +36,7 @@ Post.init(
       allowNull: false,
     },
     post_signed: {
-      type: DataTypes.BOOLEAN,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     // Added date_created to our post model
