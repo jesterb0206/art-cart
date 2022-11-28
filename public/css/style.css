@@ -4,19 +4,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
 }
-
-body {
-  font-family: 'Poppins', sans-serif;
+a,
+.btn,
+button,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Italiana', serif;
 }
 
 a {
+  color: #000000;
   text-decoration: none;
-  color: #555;
+}
+
+/* Make NavBar Look Like A Framed Painting When Hovered Over */
+
+#MenuItems a {
+  border: 5px solid #ffffff;
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+
+#MenuItems a:hover,
+a:focus,
+a:active {
+  box-shadow: 0 0 0 1px hsl(0, 0%, 0%);
+}
+
+a:active {
+  cursor: wait;
 }
 
 p {
-  color: #555;
+  color: #404040;
 }
 
 /* Login Page Styling */
@@ -118,16 +145,22 @@ form .btn:focus {
 
 .btn {
   display: inline-block;
-  background: #ff523b;
-  color: #fff;
+  background: #d4af37;
+  color: #ffffff;
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
   transition: background 0.5s;
 }
 
-.btn:hover {
-  background: #563434;
+.btn:hover,
+.btn:focus,
+.btn:active {
+  background: #b08f26;
+}
+
+.btn:active {
+  cursor: wait;
 }
 
 #LoginForm {
@@ -411,7 +444,7 @@ input:focus {
 /* Home Page Styling */
 
 .header {
-  background: radial-gradient(#fff, #c8f2ff);
+  background: #ffffff;
 }
 
 #relative-positioning {
