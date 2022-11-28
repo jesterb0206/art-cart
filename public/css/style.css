@@ -25,6 +25,10 @@ a {
 
 /* NavBar Border Box On Hover */
 
+#menuItems {
+  margin-top: -12px;
+}
+
 #MenuItems a {
   border: 5px solid #ffffff;
   color: #000000;
@@ -228,6 +232,7 @@ nav ul li {
 
 .footer-col1 {
   flex-basis: 30%;
+  margin-top: 48px;
 }
 
 .footer-col2,
@@ -241,6 +246,8 @@ nav ul li {
 }
 
 .app-logo img {
+  display: block;
+  margin-bottom: 20px;
   width: 140px;
 }
 
@@ -534,6 +541,10 @@ small {
 }
 
 /* Testimonials */
+
+.row-3 {
+  display: block;
+}
 
 .testimonial {
   padding-top: 100px;
