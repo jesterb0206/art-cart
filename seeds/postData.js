@@ -21,6 +21,16 @@ const postData = [
     post_signed: true,
     user_id: 1,
   },
+  {
+    post_title: 'Uncle Billy',
+    post_img: '12345',
+    post_price: 666.23,
+    post_medium: 'oil on canvas',
+    post_size: '36 x 24 inches framed',
+    post_year: 2020,
+    post_signed: true,
+    user_id: 3,
+  },
 ];
 
 const seedposts = () =>
