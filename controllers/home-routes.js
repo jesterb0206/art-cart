@@ -23,7 +23,7 @@ router.get('/', withAuth, async (req, res) => {
 
 router.get('/upload', async (req, res) => {
   try {
-    res.render('edit-post');
+    res.render('upload');
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
