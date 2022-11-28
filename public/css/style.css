@@ -597,6 +597,30 @@ small {
     /* May Change Later */
     padding-top: 90px;
   }
+
+  .small-container-2 {
+    max-width: 600px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* May Change Later */
+    padding-top: 90px;
+  }
+
+  .small-container-3 {
+    max-width: 600px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* May Change Later */
+    padding-top: 90px;
+  }
+
+  .col-2 .offer-img {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: -60px;
+  }
 }
 
 /* Devices Between 820px and 912px */
@@ -651,7 +675,6 @@ small {
 
   .col-3 img {
     margin-top: 20px;
-    margin-right: 20px;
   }
 
   #MenuItems a {
@@ -670,6 +693,22 @@ small {
   #relative-positioning {
     position: relative;
     top: 80px;
+  }
+}
+
+/* App Logos Weren't Centering Before Below 601px */
+
+@media only screen and (max-width: 600px) {
+  .app-logo img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 550px) {
+  .footer-col1 {
+    margin-top: 12px;
   }
 }
 
