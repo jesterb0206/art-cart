@@ -23,7 +23,7 @@ a {
   text-decoration: none;
 }
 
-/* Make NavBar Look Like A Framed Painting When Hovered Over */
+/* NavBar Border Box On Hover */
 
 #MenuItems a {
   border: 5px solid #ffffff;
@@ -113,7 +113,7 @@ p {
 #indicator {
   width: 100px;
   border: none;
-  background: #ff523b;
+  background: #d4af37;
   height: 3px;
   margin-top: 8px;
   transform: translateX(100px);
@@ -204,17 +204,18 @@ nav ul li {
 
 .footer {
   background: #ffffff;
-  color: #808080;
+  color: #000000;
   font-size: 14px;
   padding: 60px 0 20px;
 }
 
 .footer p {
-  color: #8a8a8a;
+  margin-top: 80px;
+  color: #404040;
 }
 
 .footer h3 {
-  color: #03a678;
+  color: #d4af37;
   margin-bottom: 20px;
 }
 
@@ -249,7 +250,7 @@ nav ul li {
 
 .footer hr {
   border: none;
-  background: #b5b5b5;
+  background: #bfbfbf;
   height: 1px;
   margin: 20px 0;
 }
@@ -278,7 +279,7 @@ th {
   text-align: left;
   padding: 5px;
   color: #fff;
-  background: #ff523b;
+  background: #d4af37;
   font-weight: normal;
 }
 
@@ -293,7 +294,7 @@ td input {
 }
 
 td a {
-  color: #ff523b;
+  color: #d4af37;
   font-size: 12px;
 }
 
@@ -309,7 +310,7 @@ td img {
 }
 
 .total-price table {
-  border-top: 3px solid #ff523b;
+  border-top: 3px solid #d4af37;
   width: 100%;
   max-width: 350px;
 }
@@ -339,7 +340,7 @@ th:last-child {
 }
 
 select {
-  border: 1px solid #ff523b;
+  border: 1px solid #d4af37;
   padding: 5px;
 }
 
@@ -354,7 +355,7 @@ select:focus {
 
 .page-btn span {
   display: inline-block;
-  border: 1px solid #ff523b;
+  border: 1px solid #d4af37;
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -364,7 +365,7 @@ select:focus {
 }
 
 .page-btn span:hover {
-  background: #ff523b;
+  background: #d4af37;
   color: #fff;
 }
 
@@ -407,7 +408,7 @@ select:focus {
   padding-left: 10px;
   font-size: 20px;
   margin-right: 10px;
-  border: 1px solid #ff523b;
+  border: 1px solid #d4af37;
 }
 
 input:focus {
@@ -415,7 +416,7 @@ input:focus {
 }
 
 .single-product .fa {
-  color: #ff523b;
+  color: #d4af37;
   margin-left: 10px;
 }
 
@@ -464,12 +465,12 @@ input:focus {
   margin: 0px auto 80px;
   position: relative;
   line-height: 60px;
-  color: #555;
+  color: #000000;
 }
 
 .title::after {
   content: '';
-  background: #ff523b;
+  background: #d4af37;
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -492,8 +493,14 @@ input:focus {
 }
 
 h4 {
-  color: #555;
+  color: #000000;
   font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 16px;
 }
 
 .col-4 p {
@@ -501,7 +508,7 @@ h4 {
 }
 
 .rating .fa {
-  color: #ff523b;
+  color: #d4af37;
 }
 
 .col-4:hover {
@@ -511,7 +518,7 @@ h4 {
 /* Special Offer */
 
 .offer {
-  background: radial-gradient(#fff, #c8f2ff);
+  background: #ffffff;
   margin-top: 80px;
   padding: 30px 0;
 }
@@ -523,7 +530,7 @@ h4 {
 }
 
 small {
-  color: #555;
+  color: #404040;
 }
 
 /* Testimonials */
@@ -548,28 +555,58 @@ small {
 
 .fa.fa-quote-left {
   font-size: 34px;
-  color: #ff523b;
+  color: #d4af37;
 }
 
 .col-4 p {
   font-size: 12px;
   margin: 12px 0px;
-  color: #777;
+  color: #404040;
 }
 
 .testimonial .col-4 h3 {
   font-weight: 600;
-  color: #555;
+  color: #000000;
   font-size: 16px;
+  margin-top: 16px;
 }
 
 .testimonial .col-4:hover {
   transform: translateY(-10px);
 }
 
-/* Media Query 800px & Under */
+/* Media Query 912px & Under */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 912px) {
+  .small-container {
+    max-width: 600px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* May Change Later */
+    padding-top: 90px;
+  }
+}
+
+/* Devices Between 820px and 912px */
+
+@media only screen and (max-width: 912px) and (min-width: 820px) {
+  .col-2 img {
+    margin-bottom: 48px;
+  }
+
+  .col-3 img {
+    margin-bottom: 48px;
+  }
+
+  .small-container {
+    max-width: 500px;
+  }
+}
+
+/* Media Query 820px & Under */
+
+@media only screen and (max-width: 820px) {
   .menu-icon {
     display: block;
     cursor: pointer;
@@ -595,6 +632,42 @@ small {
   }
   nav ul li a {
     color: #fff;
+  }
+
+  .col-2 img {
+    margin-bottom: 60px;
+  }
+
+  .col-3 img {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+
+  #MenuItems a {
+    border: none;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+  }
+
+  #MenuItems a:hover,
+  a:focus,
+  a:active {
+    box-shadow: none;
+  }
+
+  #relative-positioning {
+    position: relative;
+    top: 80px;
+  }
+}
+
+/* Devices Between 600px and 820px */
+
+@media only screen and (max-width: 820px) and (min-width: 600px) {
+  .col-4 {
+    min-width: none;
+    max-width: 400px;
   }
 }
 
