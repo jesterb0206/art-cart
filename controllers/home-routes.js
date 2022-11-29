@@ -5,7 +5,11 @@ const withAuth = require('../utils/auth');
 const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const multer = require('multer');
-
+cloudinary.config({
+  cloud_name :  process.env.CLOUDNAME,
+  api_key :  process.env.CLOUDAPIKEY,
+  api_secret :  process.env.CLOUDINARYSECRET
+})
 
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
@@ -72,7 +76,7 @@ router.get('/login', async (req, res) => {
 
 // Upload Route //
 
-router.get('/upload', withAuth, async (req, res) => {
+router.get('/upload', async (req, res) => {
   try {
     res.render('upload');
   } catch (err) {
@@ -83,7 +87,10 @@ router.get('/upload', withAuth, async (req, res) => {
 
 
 router.post('/upload', parser.single('image'), function (req, res) {
-  res.json(req.file);
+  if (!req.image)
+      return res.send('Please upload an image')
+  res.json(req.image);
+  console.log(image)
 });
 
 // Account Route //
