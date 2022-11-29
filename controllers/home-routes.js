@@ -81,13 +81,14 @@ router.get('/upload', withAuth, async (req, res) => {
   }
 });
 
+
 router.post('/upload', parser.single('image'), function (req, res) {
   res.json(req.file);
 });
 
-// We'll Need An Account Route //
+// Account Route //
 
-router.get('/account', async (req, res) => {
+router.get('/account', withAuth, async (req, res) => {
   try {
     const socialData = await Post.findAll(
       {
