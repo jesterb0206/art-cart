@@ -6,10 +6,10 @@ const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const multer = require('multer');
 cloudinary.config({
-  cloud_name :  process.env.CLOUDNAME,
-  api_key :  process.env.CLOUDAPIKEY,
-  api_secret :  process.env.CLOUDINARYSECRET
-})
+  cloud_name: process.env.CLOUDNAME,
+  api_key: process.env.CLOUDAPIKEY,
+  api_secret: process.env.CLOUDINARYSECRET,
+});
 
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
@@ -18,7 +18,7 @@ const storage = new CloudinaryStorage({
     allowedFormats: ['jpg', 'png'],
   },
 });
- 
+
 const parser = multer({ storage: storage });
 
 // Homepage Route //
@@ -85,27 +85,23 @@ router.get('/upload', async (req, res) => {
   }
 });
 
-
 router.post('/upload', parser.single('image'), function (req, res) {
-  if (!req.image)
-      return res.send('Please upload an image')
+  if (!req.image) return res.send('Please upload an image');
   res.json(req.image);
-  console.log(image)
+  console.log(image);
 });
 
 // Account Route //
 
 router.get('/account', withAuth, async (req, res) => {
   try {
-    const socialData = await Post.findAll(
-      {
-        where: { user_id: req.session.user_id },
-
-      });
+    const socialData = await Post.findAll({
+      where: { user_id: req.session.user_id },
+    });
     const socialPost = socialData.map((post) => post.get({ plain: true }));
-   console.log(socialPost)
+    console.log(socialPost);
     res.render('account', {
-      layout: 'main',
+      layout: 'account-page-layout',
       socialPost,
       loggedIn: req.session.loggedIn,
     });
@@ -115,7 +111,5 @@ router.get('/account', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
-
 
 module.exports = router;
