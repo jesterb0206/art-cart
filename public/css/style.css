@@ -667,6 +667,7 @@ small {
   }
 }
 
+
 .upload {
   color: black;
   width: 50%;
@@ -676,4 +677,4 @@ small {
 .uploadpost {
   align-items: center;
   margin-left: 350px;
-}
+  }
