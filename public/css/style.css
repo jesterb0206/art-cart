@@ -667,10 +667,14 @@ small {
   }
 }
 
-/* #Title {
-  color: purple;
-} */
 
 .upload {
-  color:red;
+  color: black;
+  width: 50%;
+  align-content: center;
 }
+
+.uploadpost {
+  align-items: center;
+  margin-left: 350px;
+  }
