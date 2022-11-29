@@ -30,24 +30,24 @@ const cloud_name= 'drkbv4hlc'
 
 //   router.post("/do-something-with-photo", photoData)
 // })
-document.getElementById('upload').innerHTML = `
-<h1> Upload widget </h1>
-<div><button id="upload_widget" class="cloudinary-button">Upload files</button>
-</div>
+// document.getElementById('upload').innerHTML = `
+// <h1> Upload widget </h1>
+// <div><button id="upload_widget" class="cloudinary-button">Upload files</button>
+// </div>
 
-`
+// `
 
 
-const myWidget = cloudinary.createUploadWidget({
-  cloudName: 'my_cloud_name', 
-  uploadPreset: 'Art_cart'}, (error, result) => { 
-    if (!error && result && result.event === "success") { 
-      console.log('Done! Here is the image info: ', result.info); 
-    }
-  }
-)
+// const myWidget = cloudinary.createUploadWidget({
+//   cloudName: 'my_cloud_name', 
+//   uploadPreset: 'Art_cart'}, (error, result) => { 
+//     if (!error && result && result.event === "success") { 
+//       console.log('Done! Here is the image info: ', result.info); 
+//     }
+//   }
+// )
 
-document.getElementById("upload_widget").addEventListener("click", function(e){
-  e.preventDefault()
-    myWidget.open();
-  }, false);
+// document.getElementById("upload_widget").addEventListener("click", function(e){
+//   e.preventDefault()
+//     myWidget.open();
+//   }, false);

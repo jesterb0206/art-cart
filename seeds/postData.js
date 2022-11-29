@@ -29,7 +29,7 @@ const postData = [
     post_size: '36 x 24 inches framed',
     post_year: 2020,
     post_signed: true,
-    user_id: 3,
+    user_id: 2,
   },
 ];
 
