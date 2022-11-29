@@ -33,14 +33,16 @@ router.post('/', async (req, res) => {
     try {
       const postData = await Post.create({
         post_title: req.body.post_title,
-        post_body: req.body.post_body,
-        user_id: req.body.user_id,
+        post_img: req.body.post_img,
+        post_price: req.body.post_price,
+        post_medium: req.body.post_medium,
+        post_size: req.body.post_size,
+        post_year: req.body.post_year,
+        post_signed: req.body.post_signed,
+        user_id: req.body.post_id,
       });
   
       req.session.save(() => {
-        // req.session.user_id = userData.id;
-        // req.session.logged_in = true;
-  
         res
           .status(200)
           .json({ user: postData, message: 'Postmates' });
