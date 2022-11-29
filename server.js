@@ -1,5 +1,6 @@
 // Dependencies
 
+require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -18,7 +19,7 @@ const PORT = process.env.PORT || 3001;
 const hbs = exphbs.create({ helpers });
 
 const sess = {
-  secret: 'Super secret secret',
+  secret: process.env.SECRET,
   cookie: {
     // Specifies the number (in milliseconds) to use when calculating the Expires Set-Cookie attribute (86,400 milliseconds is equal to 1 day).
     maxAge: 86400,
