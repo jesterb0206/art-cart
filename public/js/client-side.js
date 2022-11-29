@@ -1,7 +1,9 @@
+const formElem = document.getElementById('uploadForm');
+
 formElem.onsubmit = async (e) => {
     e.preventDefault();
-
-    let response = await fetch('/article/formdata/post/user-avatar', {
+     console.log("iNSIDE FORM COLLECTOR", formElem);
+    let response = await fetch('/upload', {
       method: 'POST',
       body: new FormData(formElem)
     });
