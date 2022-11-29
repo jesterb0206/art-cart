@@ -524,6 +524,123 @@ small {
   border-radius: 50%;
 }
 
+/* Upload Page */
+
+#indicator-2 {
+  width: 100px;
+  border: none;
+  background: #d4af37;
+  height: 3px;
+  margin-top: 8px;
+}
+
+#indicator-3 {
+  width: 100px;
+  border: none;
+  background: #d4af37;
+  height: 3px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+input::file-selector-button {
+  background: #d4af37;
+  border: none;
+  color: #ffffff;
+  display: inline-block;
+  font-family: 'Italiana', serif;
+}
+
+input::file-selector-button:active {
+  cursor: wait;
+}
+
+input::file-selector-button:hover,
+input::file-selector-button:focus {
+  cursor: pointer;
+}
+
+input::file-selector-button:hover,
+input::file-selector-button:focus,
+input::file-selector-button:active {
+  background: #b08f26;
+}
+
+#picture {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 10px;
+  border: hidden;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 33px;
+}
+
+#picture:focus {
+  outline: none;
+}
+
+#span-margin-top {
+  margin-top: 10px;
+}
+
+.title-2 {
+  text-align: center;
+  margin: 40px auto 40px;
+  position: relative;
+  line-height: 60px;
+  color: #000000;
+}
+
+.title-2::after {
+  content: '';
+  background: #d4af37;
+  width: 80px;
+  height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.upload-form-container {
+  background: #ffffff;
+  width: 300px;
+  height: 535px;
+  position: relative;
+  text-align: center;
+  padding: 20px 0;
+  margin: auto;
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.upload-form-container form {
+  max-width: 300px;
+  padding: 0 20px;
+  position: absolute;
+  top: 75px;
+  transition: transform 1s;
+}
+
+.upload-form-container span {
+  font-weight: bold;
+  padding: 0 10px;
+  color: #808080;
+  cursor: pointer;
+  width: 100px;
+  display: inline-block;
+}
+
+.upload-page {
+  padding: 50px 0;
+  background: #ffffff;
+}
+
+/* Upload File Button */
+
 /* Media Query 912px & Under */
 
 @media only screen and (max-width: 912px) {
@@ -666,15 +783,3 @@ small {
     margin-top: 12px;
   }
 }
-
-
-.upload {
-  color: black;
-  width: 50%;
-  align-content: center;
-}
-
-.uploadpost {
-  align-items: center;
-  margin-left: 350px;
-  }

@@ -1,22 +1,38 @@
-{{!-- will be what the post model is looking for --}}
-
-
-<form id='NewPost' class="uploadpost">
-
-    <input type='Text' placeholder='Title' id="Title" class="upload" />
-    <input type='Number' placeholder='Price' id="Price" class="upload" />
-    <input type='Text' placeholder='Medium' id="Medium" class="upload" />
-    <input type='Size' placeholder='Size' id="Size" class="upload" />
-    <input type='Number' placeholder='Year' id="Year" class="upload" />
-
-    {{!-- **should we make this different?** --}}
-    <input type='Text' placeholder='Signed' id="Signed" class="upload"/>
-
-    <label for="picture">Choose an image to upload:</label>
-
-<input type="file"
-       id="picture" name="picture"
-       accept="image/png, image/jpeg" class="upload">
-
-    <button type='submit' class='btn' class="upload">Submit</button>
-</form>
+<!-- What the post model is looking for -->
+<div class='row'>
+  <h2 class='title-2'>Upload a Product</h2>
+</div>
+<div class='upload-page'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-2'>
+        <div class='upload-form-container'>
+          <div class='form-btn'>
+            <span>Upload</span>
+            <hr id='indicator-2' />
+          </div>
+          <form id='uploadForm'>
+            <input type='Title' placeholder='Title' id='Title' />
+            <input type='Price' placeholder='Price' id='Price' />
+            <input type='Medium' placeholder='Medium' id='Medium' />
+            <input type='Size' placeholder='Size' id='Size' />
+            <input type='Year' placeholder='Year' id='Year' />
+            <input type='Signed' placeholder='Signed' id='Signed' />
+            <div class='form-btn'>
+              <span id='span-margin-top'>Image</span>
+              <hr id='indicator-3' />
+            </div>
+            <input
+              type='file'
+              id='picture'
+              name='picture'
+              accept='image/png, image/jpeg'
+              class='upload'
+            />
+            <button type='Upload' class='btn'>Upload</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
