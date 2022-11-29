@@ -68,4 +68,27 @@ router.get('/upload', async (req, res) => {
 
 // We'll Need An Account Route //
 
+router.get('/account', async (req, res) => {
+  try {
+    const socialData = await Post.findAll(
+      {
+        where: { user_id: req.session.user_id },
+
+      });
+    const socialPost = socialData.map((post) => post.get({ plain: true }));
+   console.log(socialPost)
+    res.render('account', {
+      layout: 'main',
+      socialPost,
+      loggedIn: req.session.loggedIn,
+    });
+    console.log(req.session.user_id);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
+
+
 module.exports = router;
