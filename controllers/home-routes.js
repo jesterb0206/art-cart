@@ -68,7 +68,7 @@ router.get('/upload', withAuth, async (req, res) => {
 
 // Account Route //
 
-router.get('/account', async (req, res) => {
+router.get('/account', withAuth, async (req, res) => {
   try {
     const socialData = await Post.findAll(
       {
