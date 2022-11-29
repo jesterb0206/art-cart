@@ -66,7 +66,7 @@ router.get('/upload', withAuth, async (req, res) => {
   }
 });
 
-// We'll Need An Account Route //
+// Account Route //
 
 router.get('/account', async (req, res) => {
   try {
