@@ -2,6 +2,15 @@ const router = require('express').Router();
 const { User, Comment, Post } = require('../models');
 const withAuth = require('../utils/auth');
 
+// Error: Cannot find module 'cloudinary'
+// Require stack:
+// - /Users/bradleyjester 1/bootcamp/project-two/controllers/home-routes.js
+// - /Users/bradleyjester 1/bootcamp/project-two/controllers/index.js
+// - /Users/bradleyjester 1/bootcamp/project-two/server.js
+
+// The Cloudinary Code Is Making It So I Can't Start A Node.js Server Right Now, I'm Commenting It Out For Right Now So I Can View Things In The Meantime
+
+/*
 const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const multer = require('multer');
@@ -16,6 +25,8 @@ const storage = new CloudinaryStorage({
 });
  
 const parser = multer({ storage: storage });
+
+*/
 
 // Homepage Route //
 
@@ -81,22 +92,25 @@ router.get('/upload', withAuth, async (req, res) => {
   }
 });
 
+// ReferenceError: parser is not defined
+
+/*
 
 router.post('/upload', parser.single('image'), function (req, res) {
   res.json(req.file);
 });
 
+*/
+
 // Account Route //
 
 router.get('/account', withAuth, async (req, res) => {
   try {
-    const socialData = await Post.findAll(
-      {
-        where: { user_id: req.session.user_id },
-
-      });
+    const socialData = await Post.findAll({
+      where: { user_id: req.session.user_id },
+    });
     const socialPost = socialData.map((post) => post.get({ plain: true }));
-   console.log(socialPost)
+    console.log(socialPost);
     res.render('account', {
       layout: 'main',
       socialPost,
@@ -108,7 +122,5 @@ router.get('/account', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
-
 
 module.exports = router;
