@@ -30,12 +30,15 @@
   "homepage": "https://github.com/jesterb0206/project-two#readme",
   "dependencies": {
     "bcrypt": "^5.1.0",
+    "cloudinary": "^1.32.0",
     "connect-session-sequelize": "^7.1.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-handlebars": "^6.0.6",
     "express-session": "^1.17.3",
     "generator": "^1.0.1",
+    "multer": "^1.4.5-lts.1",
+    "multer-storage-cloudinary": "^4.0.0",
     "mysql2": "^2.3.3",
     "sequelize": "^6.25.6",
     "stripe": "^11.1.0"
