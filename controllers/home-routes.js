@@ -2,6 +2,21 @@ const router = require('express').Router();
 const { User, Comment, Post } = require('../models');
 const withAuth = require('../utils/auth');
 
+const cloudinary = require('cloudinary').v2;
+const { CloudinaryStorage } = require('multer-storage-cloudinary');
+const multer = require('multer');
+
+
+const storage = new CloudinaryStorage({
+  cloudinary: cloudinary,
+  params: {
+    folder: 'Art_cart',
+    allowedFormats: ['jpg', 'png'],
+  },
+});
+ 
+const parser = multer({ storage: storage });
+
 // Homepage Route //
 
 router.get('/', withAuth, async (req, res) => {
@@ -64,6 +79,11 @@ router.get('/upload', withAuth, async (req, res) => {
     console.log(err);
     res.status(500).json(err);
   }
+});
+
+
+router.post('/upload', parser.single('image'), function (req, res) {
+  res.json(req.file);
 });
 
 // Account Route //
