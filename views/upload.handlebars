@@ -1,20 +1,20 @@
 {{!-- will be what the post model is looking for --}}
 
-<form id='NewPost'>
-    <input type='Text' placeholder='Title' id="Title" />
-    <input type='Number' placeholder='Price' id="Price" />
-    <input type='Text' placeholder='Medium' id="Medium" />
-    <input type='Size' placeholder='Size' id="Size" />
-    <input type='Number' placeholder='Year' id="Year" />
+<form id='NewPost' class="uploadpost">
+    <input type='Text' placeholder='Title' id="Title" class="upload" />
+    <input type='Number' placeholder='Price' id="Price" class="upload" />
+    <input type='Text' placeholder='Medium' id="Medium" class="upload" />
+    <input type='Size' placeholder='Size' id="Size" class="upload" />
+    <input type='Number' placeholder='Year' id="Year" class="upload" />
 
     {{!-- **should we make this different?** --}}
-    <input type='Text' placeholder='Signed' id="Signed" />
+    <input type='Text' placeholder='Signed' id="Signed" class="upload"/>
 
     <label for="picture">Choose an image to upload:</label>
 
 <input type="file"
        id="picture" name="picture"
-       accept="image/png, image/jpeg">
+       accept="image/png, image/jpeg" class="upload">
 
-    <button type='submit' class='btn'>Submit</button>
+    <button type='submit' class='btn' class="upload">Submit</button>
 </form>

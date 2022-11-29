@@ -666,3 +666,14 @@ small {
     margin-top: 12px;
   }
 }
+
+.upload {
+  color: black;
+  width: 50%;
+  align-content: center;
+}
+
+.uploadpost {
+  align-items: center;
+  margin-left: 350px;
+}
