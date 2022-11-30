@@ -58,6 +58,7 @@ router.get("/get-signature", (req, res) => {
 
 exports.createPost = async (req, res, next) => {
   const { post_title, post_img, post_price, post_medium, post_size, post_year, post_signed } = req.body;
+  // Missing a } somewhere, are we missing a catch block too?
   try {
     const result = await cloudinary.uploader.upload(post_img, {
       folder: 'products',
