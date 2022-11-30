@@ -1,14 +1,24 @@
-<h2>Account page</h2>
-
-{{#each socialPost}}
-<h3>{{post_title}}</h3>
-
-<h5>{{post_price}}</h5>
-<h5>{{post_year}}</h5>
-{{/each}}
-
-<button class="button is-small is-rounded is-primary">Small</button>
-<button class="button is-rounded is-primary">Default</button>
-<button class="button is-normal is-rounded is-primary">Normal</button>
-<button class="button is-medium is-rounded is-primary">Medium</button>
-<button class="button is-large is-rounded is-primary">Large</button>
+<h1 class='title' id='account-margins'>Account Page</h1>
+<div class='columns is-centered'>
+  <div class='column is-half'>
+    <div class='card-image'>
+      <figure class='image is-3by4'>
+        <img
+          id='account-margins'
+          src='images/by-the-coast.jpg'
+          alt='Seascape Oil Painting'
+        />
+      </figure>
+    </div>
+    <h2 class='title' id='account-margins-3'>Listing</h2>
+    <div class='content' id='account-margins-2'>
+      {{#each socialPost}}
+        <h3>{{post_title}}</h3>
+        <h4>${{post_price}}</h4>
+        <h4>{{post_medium}}</h4>
+        <h4>{{post_size}}</h4>
+        <h4>{{post_year}}</h4>
+      {{/each}}
+    </div>
+  </div>
+</div>
