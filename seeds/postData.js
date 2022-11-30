@@ -9,7 +9,7 @@ const postData = [
     post_size: '20" x 28"',
     post_year: 2018,
     post_signed: true,
-    user_id: 1,
+    user_id: 2,
   },
   {
     post_title: 'Uncle Billy',
@@ -19,7 +19,7 @@ const postData = [
     post_size: '36 x 24 inches framed',
     post_year: 2020,
     post_signed: true,
-    user_id: 2,
+    user_id: 1,
   },
 ];
 
