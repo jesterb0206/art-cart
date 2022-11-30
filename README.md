@@ -9,6 +9,21 @@
 
 A full-stack application, which combines a robust back end—with servers, databases, advanced APIs, and user authentication—to an intuitive front end.
 
+## Table of Contents
+
+- [ART (C)ART](#art-cart)
+  - [License](#license)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [Credits](#credits)
+    - [Collaborators:](#collaborators)
+    - [Sources:](#sources)
+    - [Images](#images)
+  - [Deployment Link](#deployment-link)
+    - [Deployment Click here!](#deployment-click-here)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
 ## Credits
 
 <br>
