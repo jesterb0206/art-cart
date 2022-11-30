@@ -1,5 +1,12 @@
 # ART (C)ART
 
+## License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[This application is under the MIT license](https://opensource.org/licenses/MIT)
+
+## Description
+
 A full-stack application, which combines a robust back end—with servers, databases, advanced APIs, and user authentication—to an intuitive front end.
 
 ## Credits
