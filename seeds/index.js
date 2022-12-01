@@ -1,4 +1,5 @@
-//dependencies
+// Dependencies
+
 const sequelize = require('../config/connection');
 const seedUsers = require('./userData');
 const seedPosts = require('./postData');

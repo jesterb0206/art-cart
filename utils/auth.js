@@ -8,5 +8,5 @@ const withAuth = (req, res, next) => {
     next();
   }
 };
-//export withAuth
+
 module.exports = withAuth;

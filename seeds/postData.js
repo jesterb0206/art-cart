@@ -1,6 +1,9 @@
-//dependencies
+// Dependencies
+
 const { Post } = require('../models');
-// seeded data for individual artwork
+
+// Seed data for artwork for being sold
+
 const postData = [
   {
     post_title: 'By the Coast - Seascape Oil Painting by Darko Topalski',
@@ -29,5 +32,5 @@ const seedposts = () =>
     individualHooks: true,
     returning: true,
   });
-//export from seedposts
+
 module.exports = seedposts;
