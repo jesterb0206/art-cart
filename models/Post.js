@@ -1,3 +1,4 @@
+//dependencies
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -52,23 +53,15 @@ Post.init(
         key: 'id',
         unique: false,
       },
-      // For Module 14 Challenge I just did:
-      // user_id: {
-      //    type: DataTypes.INTEGER,
-      //    allowNull: false,
-      //  },
-      // Now I'm questioning if I'm doing that part right on the Challenge
     },
   },
   {
     sequelize,
-    // I set this to false
     timestamps: false,
     freezeTableName: true,
-    // I believe 'underscored: true' makes everything in snake case
     underscored: true,
     modelName: 'Post',
   }
 );
-
+//export Post
 module.exports = Post;

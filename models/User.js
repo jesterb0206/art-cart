@@ -1,3 +1,4 @@
+//dependencies
 const { Model, DataTypes } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
@@ -50,6 +51,7 @@ User.init(
   {
     hooks: {
       beforeCreate: async (newUserData) => {
+        //password encryption
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
@@ -68,5 +70,5 @@ User.init(
     modelName: 'user',
   }
 );
-
+//export User
 module.exports = User;

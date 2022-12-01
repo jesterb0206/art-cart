@@ -1,3 +1,4 @@
+//dependencies
 const router = require('express').Router();
 const cloudinary = require("cloudinary").v2;
 require("dotenv").config()
@@ -82,4 +83,6 @@ exports.createPost = async (req, res, next) => {
       newPost
     })
 
-    module.exports = router;
+//export router
+
+module.exports = router;

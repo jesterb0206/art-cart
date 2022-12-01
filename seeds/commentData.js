@@ -1,3 +1,4 @@
+//dependencies
 const { Comment } = require('../models');
 
 const commentData = [
@@ -18,5 +19,5 @@ const seedComments = () =>
     individualHooks: true,
     returning: true,
   });
-
+//export from seedComments
 module.exports = seedComments;

@@ -1,5 +1,6 @@
+//dependencies
 const { User } = require('../models');
-
+//seeded data for account info
 const userData = [
   {
     first_name: 'Bradley',
@@ -22,5 +23,5 @@ const seedUsers = () =>
     individualHooks: true,
     returning: true,
   });
-
+//export from seedUsers
 module.exports = seedUsers;

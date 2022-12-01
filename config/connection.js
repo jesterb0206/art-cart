@@ -1,3 +1,4 @@
+//dependencies
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
@@ -18,4 +19,5 @@ if (process.env.JAWSDB_URL) {
   );
 }
 
+//export router
 module.exports = sequelize;
