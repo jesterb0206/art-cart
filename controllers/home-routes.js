@@ -77,7 +77,7 @@ router.get('/login', async (req, res) => {
 
 // Upload Route //
 
-router.get('/upload', async (req, res) => {
+router.get('/upload', withAuth, async (req, res) => {
   try {
     res.render('upload');
   } catch (err) {
