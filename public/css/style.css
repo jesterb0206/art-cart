@@ -731,6 +731,11 @@ input::file-selector-button:active {
     cursor: pointer;
   }
 
+  #MenuItems {
+    position: absolute;
+    z-index: 1;
+  }
+
   #MenuItems a {
     border: none;
     color: #ffffff;

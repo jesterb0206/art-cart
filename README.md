@@ -151,12 +151,6 @@ A full-stack application, which combines a robust back end—with servers, datab
 <br>
 <br>
 
-![View of the Asylum and Chapel of Saint-Rémy](public/images/vue-de-iasile-et-de-la-chapelle-de-saint-rémy.jpg)
-[View of the Asylum and Chapel of Saint-Rémy Link](https://en.wikipedia.org/wiki/View_of_the_Asylum_and_Chapel_of_Saint-R%C3%A9my)
-
-<br>
-<br>
-
 ![Winds of Change](public/images/winds-of-change.jpg)
 [Winds of Change Link](https://www.quora.com/What-are-some-favorite-watercolor-paintings)
 
