@@ -1,3 +1,4 @@
+//dependencies
 const router = require('express').Router();
 const { User } = require('../../models');
 
@@ -90,6 +91,6 @@ router.post('/signup', async (req, res) => {
 });
 
 
-
+//export router
 
 module.exports = router;

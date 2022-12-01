@@ -1,3 +1,4 @@
+//interaction with login page/form
 var LoginForm = document.getElementById('loginForm');
 var RegForm = document.getElementById('registerForm');
 var Indicator = document.getElementById('indicator');

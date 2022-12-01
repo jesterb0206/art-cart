@@ -1,3 +1,4 @@
+//dependencies
 const router = require('express').Router();
 const { User, Comment, Post } = require('../models');
 const withAuth = require('../utils/auth');
@@ -111,5 +112,7 @@ router.get('/account', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+//export router
 
 module.exports = router;
