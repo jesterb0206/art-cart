@@ -639,7 +639,31 @@ input::file-selector-button:active {
   background: #ffffff;
 }
 
-/* Upload File Button */
+/* Account Page Styling */
+
+#account-margins {
+  margin-top: 20px;
+}
+
+#account-margins-2 {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#account-margins-3 {
+  margin-top: 80px;
+  text-align: center;
+}
+
+#custom-font-size {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+#custom-font-size-2 {
+  font-size: medium;
+  font-weight: bold;
+}
 
 /* Media Query 912px & Under */
 
@@ -705,6 +729,11 @@ input::file-selector-button:active {
   .menu-icon {
     display: block;
     cursor: pointer;
+  }
+
+  #MenuItems {
+    position: absolute;
+    z-index: 1;
   }
 
   #MenuItems a {
