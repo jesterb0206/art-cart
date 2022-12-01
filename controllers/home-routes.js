@@ -87,9 +87,9 @@ router.get('/upload', async (req, res) => {
 });
 
 router.post('/upload', parser.single('image'), function (req, res) {
-  if (!req.image) return res.send('Please upload an image');
-  res.json(req.image);
-  console.log(image);
+  if (!req.file) return res.send({"message":"Please upload a file"});
+  res.json(req.file);
+  
 });
 
 // Account Route //
