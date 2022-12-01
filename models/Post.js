@@ -1,4 +1,5 @@
-//dependencies
+// Dependencies
+ 
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
  
@@ -17,11 +18,11 @@ Post.init(
       allowNull: false,
     },
     post_img: {
-       type: DataTypes.STRING,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     post_price: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.FLOAT,
       allowNull: false,
     },
     post_medium: {
@@ -40,14 +41,17 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // Added date_created to our post model
- 
+    date_created: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.NOW,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
         model: 'user',
         key: 'id',
-     
+        unique: false,
       },
     },
   },
@@ -56,8 +60,9 @@ Post.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'post',
+    modelName: 'Post',
   }
+
 );
 //export Post
 module.exports = Post;
