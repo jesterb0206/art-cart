@@ -55,7 +55,7 @@ a:active {
 
 .btn {
   display: inline-block;
-  background: #d4af37;
+  background: #1f5cc5;
   color: #ffffff;
   padding: 8px 30px;
   margin: 30px 0;
@@ -70,7 +70,7 @@ a:active {
 .btn:hover,
 .btn:focus,
 .btn:active {
-  background: #b08f26;
+  background: #1f5cc5;
 }
 
 .col-2 {
@@ -149,7 +149,7 @@ form input:focus {
 #indicator {
   width: 100px;
   border: none;
-  background: #d4af37;
+  background: #1f5cc5;
   height: 3px;
   margin-top: 8px;
   transform: translateX(100px);
@@ -236,7 +236,7 @@ nav ul li {
 }
 
 .footer h3 {
-  color: #d4af37;
+  color: #1f5cc5;
   margin-bottom: 20px;
 }
 
@@ -286,7 +286,7 @@ nav ul li {
 
 .page-btn span {
   display: inline-block;
-  border: 1px solid #d4af37;
+  border: 1px solid #1f5cc5;
   margin-left: 10px;
   width: 40px;
   height: 40px;
@@ -296,7 +296,7 @@ nav ul li {
 }
 
 .page-btn span:hover {
-  background: #d4af37;
+  background: #1f5cc5;
   color: #fff;
 }
 
@@ -306,7 +306,7 @@ nav ul li {
 }
 
 select {
-  border: 1px solid #d4af37;
+  border: 1px solid #1f5cc5;
   padding: 5px;
 }
 
@@ -345,7 +345,7 @@ input:focus {
 }
 
 .single-product .fa {
-  color: #d4af37;
+  color: #1f5cc5;
   margin-left: 10px;
 }
 
@@ -361,7 +361,7 @@ input:focus {
   padding-left: 10px;
   font-size: 20px;
   margin-right: 10px;
-  border: 1px solid #d4af37;
+  border: 1px solid #1f5cc5;
 }
 
 .single-product select {
@@ -437,7 +437,7 @@ h4 {
 }
 
 .rating .fa {
-  color: #d4af37;
+  color: #1f5cc5;
 }
 
 .title {
@@ -450,7 +450,7 @@ h4 {
 
 .title::after {
   content: '';
-  background: #d4af37;
+  background: #1f5cc5;
   width: 80px;
   height: 5px;
   border-radius: 5px;
@@ -488,7 +488,7 @@ small {
 
 .fa.fa-quote-left {
   font-size: 34px;
-  color: #d4af37;
+  color: #1f5cc5;
 }
 
 .row-3 {
@@ -529,7 +529,7 @@ small {
 #indicator-2 {
   width: 100px;
   border: none;
-  background: #d4af37;
+  background: #1f5cc5;
   height: 3px;
   margin-top: 8px;
 }
@@ -537,14 +537,14 @@ small {
 #indicator-3 {
   width: 100px;
   border: none;
-  background: #d4af37;
+  background: #1f5cc5;
   height: 3px;
   margin-top: 8px;
   margin-bottom: 20px;
 }
 
 input::file-selector-button {
-  background: #d4af37;
+  background: #1f5cc5;
   border: none;
   color: #ffffff;
   display: inline-block;
@@ -563,7 +563,7 @@ input::file-selector-button:focus {
 input::file-selector-button:hover,
 input::file-selector-button:focus,
 input::file-selector-button:active {
-  background: #b08f26;
+  background: #1f5cc5;
 }
 
 #picture {
@@ -595,7 +595,7 @@ input::file-selector-button:active {
 
 .title-2::after {
   content: '';
-  background: #d4af37;
+  background: #1f5cc5;
   width: 80px;
   height: 5px;
   border-radius: 5px;
