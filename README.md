@@ -15,6 +15,10 @@ Users can search by price, medium, artists and much more!
 
 A full-stack application, which combines a robust back end—with server connections, databases, advanced APIs, and user authentication—to an intuitive front end.
 
+### Technologies Used
+
+HTML, CSS, JavaScript, Node.js, Express.js, Sequelize, Handlebars, MySQL, Bulma, Cloudinary, Multer, Google Fonts
+
 ## Table of Contents
 
 - [ART (C)ART](#art-cart)
