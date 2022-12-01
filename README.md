@@ -14,7 +14,6 @@ Artist can upload their work (originals and/or prints) to sell around the world.
 Users can search by price, medium, artists and much more!
 
 A full-stack application, which combines a robust back end—with server conections, databases, advanced APIs, and user authentication—to an intuitive front end.
-A full-stack application, which combines a robust back end—with servers, databases, advanced APIs, and user authentication—to an intuitive front end.
 
 ## Table of Contents
 
