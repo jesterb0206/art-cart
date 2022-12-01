@@ -1,4 +1,5 @@
 // Dependencies
+
 require('dotenv').config();
 const path = require('path');
 const express = require('express');
@@ -35,7 +36,7 @@ const sess = {
 
 app.use(session(sess));
 
-// Inform Express.js on which template engine to use
+// Inform Express.js which template engine to use
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');

@@ -1,21 +1,19 @@
-//dependencies
+// Dependencies
+
 const router = require('express').Router();
 const { User } = require('../../models');
 
-
 router.get('/', async (req, res) => {
-
   try {
-    const userData = await User.findAll()
-    const users = userData.map((user) =>
-      user.get({ plain: true }));
+    const userData = await User.findAll();
+    const users = userData.map((user) => user.get({ plain: true }));
     res.status(200).json(users);
   } catch (err) {
     console.log(err);
     res.status(500).json(err);
   }
-
 });
+
 // Login
 
 router.post('/login', async (req, res) => {
@@ -72,7 +70,7 @@ router.post('/signup', async (req, res) => {
       username: req.body.username,
       password: req.body.password,
       email: req.body.email,
-      first_name: req.body.first_name, 
+      first_name: req.body.first_name,
       last_name: req.body.last_name,
     });
 
@@ -89,8 +87,5 @@ router.post('/signup', async (req, res) => {
     res.status(500).json(err);
   }
 });
-
-
-//export router
 
 module.exports = router;

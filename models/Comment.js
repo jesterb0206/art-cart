@@ -1,4 +1,5 @@
-//dependencies
+// Dependencies
+
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -38,5 +39,5 @@ Comment.init(
     modelName: 'comment',
   }
 );
-//export comment
+
 module.exports = Comment;

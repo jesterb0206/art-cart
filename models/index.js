@@ -1,8 +1,8 @@
-//dependencies
+// Dependencies
+
 const User = require('./User');
 const Comment = require('./Comment');
 const Post = require('./Post');
-
 
 User.hasMany(Post, {
   foreignKey: 'user_id',
@@ -28,7 +28,5 @@ Post.hasMany(Comment, {
 Comment.belongsTo(Post, {
   foreignKey: 'post_id',
 });
-
-// export data from user, comment, and post
 
 module.exports = { User, Comment, Post };

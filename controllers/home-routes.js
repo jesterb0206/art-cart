@@ -1,4 +1,5 @@
-//dependencies
+// Dependencies
+
 const router = require('express').Router();
 const { User, Comment, Post } = require('../models');
 const withAuth = require('../utils/auth');
@@ -22,7 +23,7 @@ const storage = new CloudinaryStorage({
 
 const parser = multer({ storage: storage });
 
-// Homepage Route //
+// Homepage Route
 
 router.get('/', withAuth, async (req, res) => {
   try {
@@ -42,7 +43,7 @@ router.get('/', withAuth, async (req, res) => {
   }
 });
 
-// Products Route //
+// Products Route
 
 router.get('/products', async (req, res) => {
   try {
@@ -53,7 +54,7 @@ router.get('/products', async (req, res) => {
   }
 });
 
-// Retrieve A Single Product //
+// Retrieve A Single Product
 
 router.get('/product', async (req, res) => {
   try {
@@ -64,7 +65,7 @@ router.get('/product', async (req, res) => {
   }
 });
 
-// Login Route //
+// Login Route
 
 router.get('/login', async (req, res) => {
   try {
@@ -75,7 +76,7 @@ router.get('/login', async (req, res) => {
   }
 });
 
-// Upload Route //
+// Upload Route
 
 router.get('/upload', withAuth, async (req, res) => {
   try {
@@ -87,12 +88,11 @@ router.get('/upload', withAuth, async (req, res) => {
 });
 
 router.post('/upload', parser.single('image'), function (req, res) {
-  if (!req.file) return res.send({"message":"Please upload a file"});
+  if (!req.file) return res.send({ message: 'Please upload a file' });
   res.json(req.file);
-  
 });
 
-// Account Route //
+// Account Route
 
 router.get('/account', withAuth, async (req, res) => {
   try {
@@ -112,7 +112,5 @@ router.get('/account', withAuth, async (req, res) => {
     res.status(500).json(err);
   }
 });
-
-//export router
 
 module.exports = router;

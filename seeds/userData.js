@@ -1,6 +1,9 @@
-//dependencies
+// Dependencies
+
 const { User } = require('../models');
-//seeded data for account info
+
+// Seed data for account information
+
 const userData = [
   {
     first_name: 'Bradley',
