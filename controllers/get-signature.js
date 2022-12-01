@@ -84,6 +84,6 @@ exports.createPost = async (req, res, next) => {
       newPost
     })
 
-//export router
+    //export router
 
-module.exports = router;
+    module.exports = router;
