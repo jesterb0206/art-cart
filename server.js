@@ -22,7 +22,7 @@ const sess = {
   secret: process.env.SECRET,
   cookie: {
     // Specifies the number (in milliseconds) to use when calculating the Expires Set-Cookie attribute (86,400 milliseconds is equal to 1 day).
-    maxAge: 8640000,
+    maxAge: 86400,
     httpOnly: true,
     secure: false,
     sameSite: 'strict',
