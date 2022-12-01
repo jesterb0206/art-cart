@@ -13,11 +13,9 @@ router.get('/', async (req, res) => {
     }
 });
 
-//took this v part from mini project day 13
 router.get('/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
-//      include: [{ model: Location, through: Trip, as: 'planned_trips' }]
     });
     if (!postData) {
       res.status(404).json({ message: 'Nothing found with this id!' });

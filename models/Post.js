@@ -40,7 +40,6 @@ Post.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    // Added date_created to our post model
     date_created: {
       type: DataTypes.DATE,
       allowNull: false,
