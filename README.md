@@ -1,44 +1,88 @@
 # ART (C)ART
 
-## License
+## Deployment Link
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[This application is under the MIT license](https://opensource.org/licenses/MIT)
+<br>
+
+[Deployment](https://art-cart-gui-guys-production.herokuapp.com/login) Click here!
+
+<br>
 
 ## Description
 
-An online art gallery to connect artist to consumers and art lovers. 
+<br>
 
-Artist can upload their work (originals and/or prints) to sell around the world.
+ART (C)ART is a full-stack application, which combines a robust back end—with server connections, databases, advanced APIs, and user authentication—to an intuitive front end.
 
-Users can search by price, medium, artists and much more!
+Artists can upload their original works (as well as prints) to sell all across the globe!
 
-A full-stack application, which combines a robust back end—with server connections, databases, advanced APIs, and user authentication—to an intuitive front end.
+Users can search by price, medium, artists and so much more!
 
-### Technologies Used
+ART (C)ART connects artists to consumers and art lovers alike!
 
-HTML, CSS, JavaScript, Node.js, Express.js, Sequelize, Handlebars, MySQL, Bulma, Cloudinary, Multer, Google Fonts
+<br>
 
 ## Table of Contents
 
+<br>
+
 - [ART (C)ART](#art-cart)
-  - [License](#license)
+  - [Deployment Link](#deployment-link)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
+  - [Technologies Used](#technologies-used)
+  - [Usage](#usage)
   - [Credits](#credits)
-    - [Collaborators:](#collaborators)
-    - [Sources:](#sources)
+    - [Collaborators](#collaborators)
+    - [Sources](#sources)
     - [Images](#images)
-  - [Deployment Link](#deployment-link)
-    - [Deployment Click here!](#deployment-click-here)
+  - [License](#license)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+<br>
+
+## Technologies Used
+
+<br>
+
+Bulma, Cloudinary, CSS, Express.js, Google Fonts, Handlebars, HTML, JavaScript, Multer, MySQL, Node.js, and Sequelize
+
+<br>
+
+## Usage
+
+<br>
+
+![Homepage](public/images/home-page.png)
+
+<br>
+
+![Products](public/images/products.png)
+
+<br>
+
+![Product](public/images/product.png)
+
+<br>
+
+![Sign In](public/images/sign-in.png)
+
+<br>
+
+![Upload](public/images/upload.png)
+
+<br>
+
+![Account](public/images/account.png)
+
+<br>
 
 ## Credits
 
 <br>
 
-### Collaborators:
+### Collaborators
 
 <br>
 
@@ -50,7 +94,7 @@ HTML, CSS, JavaScript, Node.js, Express.js, Sequelize, Handlebars, MySQL, Bulma,
 
 <br>
 
-### Sources:
+### Sources
 
 <br>
 
@@ -167,16 +211,17 @@ HTML, CSS, JavaScript, Node.js, Express.js, Sequelize, Handlebars, MySQL, Bulma,
 <br>
 <br>
 
-<h2 align="center">All other images courtesy of Easy Tutorials</h2>
+<h2 align="left">All other images courtesy of Easy Tutorials</h2>
 
 <br>
 <br>
 
-<h3 align="center"> <a href="https://www.youtube.com/@EasyTutorialsVideo" target="_blank" rel="noopener">Easy Tutorials Link</a> </h3>
+<h3 align="left"> <a href="https://www.youtube.com/@EasyTutorialsVideo" target="_blank" rel="noopener">Easy Tutorials Link</a> </h3>
 
 <br>
 <br>
 
-## Deployment Link
+## License
 
-### [Deployment](https://art-cart-gui-guys-production.herokuapp.com/login) Click here!
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[This application is under the MIT license](https://opensource.org/licenses/MIT)
